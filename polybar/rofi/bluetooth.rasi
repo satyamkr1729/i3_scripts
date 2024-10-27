@@ -1,0 +1,117 @@
+/**
+ * ROFI Color theme
+ * User: Qball
+ * Copyright: Dave Davenport
+ */
+
+* {
+    text-color:  #ffeedd;
+    background-color:  transparent;
+    dark: #1c1c1c;
+    bg0:    #242424AA;
+    bg1: #554444AA;
+
+    // Black
+    black:       #3d352a;
+    lightblack:  #554444;
+    //
+    // Red
+    red:         #cd5c5c;
+    lightred:    #cc5533;
+    //
+    // Green
+    green:       #86af80;
+    lightgreen:  #88cc22;
+    //
+    // Yellow
+    yellow:      #e8ae5b;
+    lightyellow:     #ffa75d;
+    //
+    // Blue
+    blue:      #6495ed;
+    lightblue:     #87ceeb;
+    skyblue: #2fabf591;
+    //
+    // Magenta
+    magenta:      #deb887;
+    lightmagenta:     #996600;
+    //
+    // Cyan
+    cyan:      #b0c4de;
+    lightcyan:     #b0c4de;
+    //
+    // White
+    white:      #bbaa99;
+    lightwhite:     #ddccbb;
+    //
+    // Bold, Italic, Underline
+    highlight:     bold #ffffff;
+}
+
+window {
+    height:   50%;
+    width: 22em;
+    location: south east;
+    anchor:   south east;
+    border:  0px 2px 0px 0px;
+    text-color: @lightwhite;
+    margin-bottom: 10px;
+    y-offset: -35px;
+    background-color: @bg0;
+}
+
+inputbar {
+    background-color: @bg1;
+    text-color: @lightgreen;
+    padding: 4px;
+    border: 0px 0px 2px 0px;
+}
+
+mainbox {
+    expand: true;
+    spacing: 1em;
+}
+
+listview {
+    padding: 0em 0.4em 0em 1em;
+    dynamic: false;
+    lines: 0;
+}
+
+element {
+  spacing: 0px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    padding: 5px 0px 5px 5px;
+}
+
+element-icon {
+  size: 1.5em;
+  background-color: inherit;
+}
+
+element selected  normal {
+    background-color: @skyblue;
+    border-radius: 5px;
+}
+
+element normal active {
+    text-color: @lightgreen;
+}
+
+element alternate normal {
+}
+
+element alternate active {
+    text-color: @lightgreen;
+}
+
+element selected active {
+    background-color: @skyblue;
+    text-color: @dark;
+    border-radius: 10px;
+}
+
